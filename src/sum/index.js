@@ -10,9 +10,7 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
-  sum.reduce((sum) =>
-    return a + b;
-  );
+  [a, b].reduce((a, b) => a + b, 0);
 };
 
 export default sum;

@@ -8,7 +8,11 @@
  * turnMeBaby('Some text'); // 'txet emoS'
  */
 const turnMeBaby = str => {
-  /* your logic here...*/
+  // if (str === "")
+  //   return "";
+  // else
+  //   return turnMeBaby(str.substr(1)) + str.charAt(0);
+  return (str === '') ? '' : turnMeBaby(str.substr(1)) + str.charAt(0);
 };
 
 export default turnMeBaby;
