@@ -8,6 +8,8 @@
 */
 const max = arr => {
   /* your logic here...*/
+  arr = arr.filter( item =>  isFinite(item) );
+  return Math.max.apply(null, arr);
 };
 
 export default max;

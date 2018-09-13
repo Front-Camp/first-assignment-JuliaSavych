@@ -9,6 +9,7 @@
  */
 const isObject = data => {
   /* your logic here...*/
+  return data && typeof data === 'object' && data.constructor === Object && null !== data;
 };
 
 export default isObject;
